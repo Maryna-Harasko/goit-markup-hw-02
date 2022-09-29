@@ -53,3 +53,36 @@ body{
 .contact a:focus {
     color: var(--accent-color);
 }
+
+.footer-page{
+    background-color: var(--dark-bgr-color);
+}
+
+.footer-page>a{
+    color: var(--white-color);
+}
+
+.link-adress>a{
+    color: var(--white-color);
+}
+
+.link-contact>a{
+    color: var(--adress-text-color);
+}
+
+.link-adress , .link-contact {
+    list-style-type: none;
+}
+
+.link-adress>a, .link-contact>a{
+    text-decoration: none;
+}
+
+.link-adress>a:hover, .link-adress>a:focus,
+.link-contact>a:hover,
+.link-contact>a:focus {
+    color: var(--accent-color);
+}
+
+
+
