@@ -14,7 +14,10 @@ body{
     color: var(--primary-text-color);
 
     background-color: var(--primary-bgr-color);
-  
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -32,7 +35,9 @@ body{
 
 h1, h2, h3{
     color: var(--title-text-color);
+
 }
+
 
 /*Header*/
 
@@ -44,16 +49,31 @@ h1, h2, h3{
 
 .logo{
     color: var(--logo-text);
-    text-decoration: none;
+    
+    font-family: 'Raleway';
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+
 }
 
 .logo>span{
     color: var(--accent-color);
 }
 
+
+
 .site-nav,
 .contact, .advanteg-list, .project-list, .team-list,  .portfolio-list, .portfolio-button-list {
     list-style-type: none;
+}
+
+.site-nav a, .contact a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
 }
 
 .site-nav a, .portfolio-link {
@@ -61,9 +81,14 @@ h1, h2, h3{
     color: var(--title-text-color);
 }
 
+
 .contact a{
     text-decoration: none;
     color: var(--primary-text-color);
+}
+
+ .site-nav .current {
+    color: var(--accent-color);
 }
 
 .site-nav a:hover,
@@ -72,6 +97,8 @@ h1, h2, h3{
 .contact a:focus {
     color: var(--accent-color);
 }
+
+
 /*section Hero*/
 
 .hero-section{
@@ -80,27 +107,90 @@ h1, h2, h3{
 
 .hero-title{
     color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .hero-button{
+    background: var(--accent-color);
+    color: var(--white-color);
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+.hero-button:hover, .hero-button:focus{
+    background-color: var(--ligth-brg-color);
+    color: var(--title-text-color)
 }
 
 /*Section Наші переваги*/
 
+.advanteg-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.advanteg-text{
+    font-size: 14px;
+    line-height: 1.71;
+}
 /*Section Чим ми займаємося*/
+
+.project-title, .team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
 
 /*Section Наша команда*/
 
 .team-section{
     background-color: var(--ligth-brg-color);
+    text-align: center;
+    line-height: 1.19;
 }
 
 .team-list{
     background-color: var(--white-color);
 }
 
+.team-list h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team-list p{
+    font-size: 16px;    
+}
+
 /*Страница портфоліо*/
+
+.portfolio-button{
+    background: var(--ligth-brg-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-button:hover, .portfolio-button:focus{
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
 
 .portfolio-list{
     background-color: var(--white-color);
@@ -109,6 +199,19 @@ h1, h2, h3{
 .portfolio-link{
     color: var(--primary-text-color);
 }
+
+.portfolio-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.89;
+}
+
 /*footer*/
 
 .footer-page{
@@ -133,6 +236,14 @@ h1, h2, h3{
 
 .link-adress>a, .link-contact>a{
     text-decoration: none;
+}
+
+.footer-page,
+.link-adress,
+.link-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .link-adress>a:hover, .link-adress>a:focus,
