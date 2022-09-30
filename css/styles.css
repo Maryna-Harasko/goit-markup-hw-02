@@ -17,6 +17,23 @@ body{
   
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+h1, h2, h3{
+    color: var(--title-text-color);
+}
+
 /*Header*/
 
 .header-page {
@@ -34,10 +51,12 @@ body{
     color: var(--accent-color);
 }
 
-.site-nav>li, .contact>li {
+.site-nav,
+.contact, .advanteg-list, .project-list, .team-list,  .portfolio-list, .portfolio-button-list {
     list-style-type: none;
 }
-.site-nav a {
+
+.site-nav a, .portfolio-link {
     text-decoration: none;
     color: var(--title-text-color);
 }
@@ -53,6 +72,44 @@ body{
 .contact a:focus {
     color: var(--accent-color);
 }
+/*section Hero*/
+
+.hero-section{
+    background-color: var(--dark-bgr-color);
+}
+
+.hero-title{
+    color: var(--white-color);
+}
+
+.hero-button{
+
+}
+
+/*Section Наші переваги*/
+
+/*Section Чим ми займаємося*/
+
+/*Section Наша команда*/
+
+.team-section{
+    background-color: var(--ligth-brg-color);
+}
+
+.team-list{
+    background-color: var(--white-color);
+}
+
+/*Страница портфоліо*/
+
+.portfolio-list{
+    background-color: var(--white-color);
+}
+
+.portfolio-link{
+    color: var(--primary-text-color);
+}
+/*footer*/
 
 .footer-page{
     background-color: var(--dark-bgr-color);
